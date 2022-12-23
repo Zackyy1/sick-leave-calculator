@@ -1,6 +1,8 @@
+@import 'styles/variables';
+
 .component.divider {
     height: 1px;
     width: 100%;
-    background: #E9EDF4;
+    background: $color-divider;
     margin: 20px 0;
 }

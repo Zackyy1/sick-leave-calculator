@@ -1,4 +1,5 @@
 @import 'styles/mixins';
+@import 'styles/variables';
 
 .component.body-text {
     @include rem(font-size, 18);
@@ -6,7 +7,6 @@
     margin-top: 20px;
 
     .highlight {
-        color: rgba(225, 38, 28, 1);
-
+        color: $text-highlight;
     }
 }

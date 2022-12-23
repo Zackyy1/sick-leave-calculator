@@ -1,4 +1,6 @@
 @import 'styles/mixins';
+@import 'styles/variables';
+
 $corner-radius: 20px;
 
 .component.calculator {
@@ -6,7 +8,7 @@ $corner-radius: 20px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    color: rgba(17, 19, 23, 1);
+    color: $color-text-black;
     -webkit-clip-path: polygon($corner-radius 0%, calc(100% - $corner-radius) 0%, 100% $corner-radius, 100% calc(100% - $corner-radius), calc(100% - $corner-radius) 100%, $corner-radius 100%, 0% calc(100% - $corner-radius), 0% $corner-radius);
     clip-path: polygon($corner-radius 0%, calc(100% - $corner-radius) 0%, 100% $corner-radius, 100% calc(100% - $corner-radius), calc(100% - $corner-radius) 100%, $corner-radius 100%, 0% calc(100% - $corner-radius), 0% $corner-radius);
 

@@ -1,6 +1,9 @@
 @import 'styles/mixins';
+@import 'styles/variables';
 
 .component.bullet-list {
+    margin-top: 20px;
+
     ul {
         list-style: none;
 
@@ -19,7 +22,7 @@
                 top: 12px;
                 width: 16px;
                 height: 4px;
-                background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+                background: $general-gradient;
             }
 
             &.ident {
@@ -28,13 +31,10 @@
                 &::before {
                     left: 30px;
                     width: 12px;
-                    background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+                    background: $bullet-gradient-ident;
                 }
             }
         }
     }
 
-    margin-top: 20px;
-
-    .ident {}
 }

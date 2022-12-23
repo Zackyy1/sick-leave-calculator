@@ -4,15 +4,13 @@
 
     @include flex-display();
     @include align-items(center);
-    margin-top: 1px;
 
     label {
-
         @include rem(font-size, 14);
         @include rem(line-height, 20);
     }
 
-    input[type=checkbox] {
+    input {
         @include gradient-border();
         width: 20px;
         height: 20px;
