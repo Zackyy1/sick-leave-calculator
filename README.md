@@ -1,6 +1,8 @@
 
-Test task for WebExperts
+Test task
+
 Developed by Martin Gontšarov on 23.12.2022
+
 Approximate time ~ 5 hours
 
 ### `npm install`
