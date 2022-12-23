@@ -1,0 +1,25 @@
+@import 'styles/mixins';
+
+.component.headline {
+
+    h1,
+    h2, h4 {
+        letter-spacing: -0.02em;
+
+    }
+
+    h1 {
+        @include rem(font-size, 40);
+        @include rem(line-height, 50);
+    }
+
+    h2 {
+        @include rem(font-size, 32);
+        @include rem(line-height, 35);
+    }
+
+    h4 {
+        @include rem(font-size, 24);
+        @include rem(line-height, 25);
+    }
+}

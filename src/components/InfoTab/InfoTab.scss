@@ -1,0 +1,33 @@
+@import 'styles/mixins';
+
+.info {
+    @include flex-display();
+    @include flex-direction(column);
+
+    .fringilla {
+        margin-top: 40px;
+        @include flex-display();
+        @include flex-direction(column);
+
+        .row {
+            @include flex-display();
+            @include flex-direction(row);
+
+            >div {
+                margin-right: 20px;
+            }
+
+            @include mobile {
+                @include flex-direction(column);
+
+                >div {
+                    margin: 0;
+                }
+
+                .component.image {
+                    margin: 20px 0 0;
+                }
+            }
+        }
+    }
+}

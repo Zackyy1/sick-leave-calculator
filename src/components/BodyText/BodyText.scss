@@ -1,0 +1,12 @@
+@import 'styles/mixins';
+
+.component.body-text {
+    @include rem(font-size, 18);
+    @include rem(line-height, 30);
+    margin-top: 20px;
+
+    .highlight {
+        color: rgba(225, 38, 28, 1);
+
+    }
+}

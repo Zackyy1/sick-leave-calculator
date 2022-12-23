@@ -1,0 +1,73 @@
+@import 'styles/mixins';
+$corner-radius: 20px;
+
+.component.calculator {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: rgba(17, 19, 23, 1);
+    -webkit-clip-path: polygon($corner-radius 0%, calc(100% - $corner-radius) 0%, 100% $corner-radius, 100% calc(100% - $corner-radius), calc(100% - $corner-radius) 100%, $corner-radius 100%, 0% calc(100% - $corner-radius), 0% $corner-radius);
+    clip-path: polygon($corner-radius 0%, calc(100% - $corner-radius) 0%, 100% $corner-radius, 100% calc(100% - $corner-radius), calc(100% - $corner-radius) 100%, $corner-radius 100%, 0% calc(100% - $corner-radius), 0% $corner-radius);
+
+    padding: 80px 0;
+
+    .headline,
+    form,
+    .results {
+        padding: 0 20px;
+    }
+
+    form {
+        padding-top: 20px;
+        display: grid;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+
+        .title {
+            @include rem(font-size, 14);
+            @include rem(line-height, 15);
+            margin-bottom: 10px;
+
+        }
+
+        .amount {
+            font-weight: 700;
+            @include rem(font-size, 18);
+            @include rem(line-height, 20);
+        }
+
+        .daily-allowance {
+            color: #7A818E;
+            @include rem(font-size, 12);
+            @include rem(line-height, 15);
+        }
+
+    }
+
+    .total {
+        text-align: center;
+
+        .title {
+            @include rem(font-size, 14);
+            @include rem(line-height, 15);
+            margin-bottom: 5px;
+        }
+
+        .amount {
+            font-weight: 700;
+            @include rem(font-size, 24);
+            @include rem(line-height, 30);
+        }
+    }
+
+
+
+}

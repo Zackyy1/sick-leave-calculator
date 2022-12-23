@@ -1,0 +1,40 @@
+@import 'styles/mixins';
+
+.component.bullet-list {
+    ul {
+        list-style: none;
+
+        li {
+
+            @include rem(font-size, 18);
+            @include rem(line-height, 30);
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 12px;
+                width: 16px;
+                height: 4px;
+                background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+            }
+
+            &.ident {
+                padding-left: 55px;
+
+                &::before {
+                    left: 30px;
+                    width: 12px;
+                    background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+                }
+            }
+        }
+    }
+
+    margin-top: 20px;
+
+    .ident {}
+}
